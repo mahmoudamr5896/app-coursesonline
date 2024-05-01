@@ -21,4 +21,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('onlinecourse/', include('onlinecourse.urls')),
+    path('login/', include('onlinecourse.urls')),
+    # path('logout/', include('onlinecourse.urls')),
+    # path('courses/', include('onlinecourse.urls')),
+    # path('course/:id', include('onlinecourse.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
