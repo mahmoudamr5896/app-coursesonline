@@ -133,4 +133,7 @@ def extract_answers(request):
 #def show_exam_result(request, course_id, submission_id):
 
 
+def dash(request):
+    context=[]
+    return render(request,'onlinecourse/couses_dashboard_.html',context)
 
